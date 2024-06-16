@@ -1,0 +1,97 @@
+/* Apply CSS reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Press Start 2P", "Poppins", "sans-serif";
+    box-sizing: border-box;
+}
+
+/* Body styles for overall background and text color */
+body {
+    background: #3c349c;
+    color: #fff;
+}
+
+/* Styling for the main container */
+.container {
+    margin: auto;
+    width: 90%; 
+    max-width: 650px; 
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* Styling for the password display area */
+.display {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background: #fff;
+    color: #3c3c3c;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+/* Styling for the copy icon inside the display area */
+.display img {
+    height: 30px;
+    cursor: pointer;
+}
+
+/* Styling for the main title */
+.container h1 {
+    font-weight: 500;
+    font-size: 2.5rem; 
+}
+
+/* Styling for the password input field */
+.display input {
+    border: 0;
+    outline: 0;
+    font-size: 13px;
+    color: #8b8b8b;
+}
+
+/* Styling for the generate and clear buttons */
+.container button {
+    border: 5px solid; 
+    outline: 0;
+    background: #c9479e;
+    box-shadow: 0 14px 0 0 rgb(77, 120, 140); 
+    color: #fff;
+    font-size: 13px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25px; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+/* Styling for the clear button */
+.buttons .clear {
+    background: #9b999a; 
+}
+
+/* Active state for buttons */
+.container button:active {
+    transform: translateY(8px); 
+    box-shadow: 0 5px 0 0 rgb(77, 120, 140); 
+}
+
+/* Flexbox settings for button container */
+.container .buttons {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+/* Adjust margin between buttons */
+.container .buttons button {
+    margin-right: 30px; 
+}
